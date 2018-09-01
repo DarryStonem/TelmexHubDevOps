@@ -13,6 +13,7 @@ namespace Demo.ViewModels
             Analytics.TrackEvent("User enter to About Page");
 
             OpenWebCommand = new Command(CrashTheApp);
+            CrashCommand = new Command(CrashTheAppNew);
         }
 
         private void CrashTheApp(object obj)
@@ -20,6 +21,12 @@ namespace Demo.ViewModels
             throw new Exception("About crash");
         }
 
+        private void CrashTheAppNew(object obj)
+        {
+            throw new Exception("About crash... again");
+        }
+
         public ICommand OpenWebCommand { get; }
+        public ICommand CrashCommand { get; }
     }
 }
