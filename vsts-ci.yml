@@ -29,7 +29,7 @@ steps:
   inputs:
     testRunner: 'xUnit' # Options: jUnit, nUnit, vSTest, xUnit
     testResultsFiles: '**/TEST-*.xml' 
-    #searchFolder: '$(System.DefaultWorkingDirectory)' # Optional
+    searchFolder: '**/Testing.csproj' # Optional
     #mergeTestResults: false # Optional
     #testRunTitle: # Optional
     #platform: # Optional
