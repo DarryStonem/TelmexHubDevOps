@@ -26,7 +26,6 @@ namespace Demo.ViewModels
             try
             {
                 Analytics.TrackEvent("User enter to Item Detail");
-                throw new Exception("Item Detail crash");
             }
             catch (Exception ex)
             {
