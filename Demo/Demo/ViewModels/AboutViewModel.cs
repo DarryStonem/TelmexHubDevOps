@@ -18,7 +18,7 @@ namespace Demo.ViewModels
 
         private void CrashTheApp(object obj)
         {
-            throw new Exception("About crash");
+            //throw new Exception("About crash");
         }
 
         private void CrashTheAppNew(object obj)
